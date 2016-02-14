@@ -61,9 +61,9 @@ public class ShooterSystem extends Subsystem {
     	cimMotor1.set(1.0);
     	cimMotor2.set(-1.0);
     }
-    public void stopBallShooter() {
+    /*public void stopBallShooter() {
     	cimMotor1.set(0.0);
     	cimMotor2.set(0.0);
-    }
+    }*/
 }
 

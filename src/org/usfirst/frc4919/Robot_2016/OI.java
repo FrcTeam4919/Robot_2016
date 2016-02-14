@@ -73,9 +73,9 @@ public class OI {
         kickerButton = new JoystickButton(joystick, 12);
         kickerButton.whileHeld(new Brake());
         towerUpButton = new JoystickButton(joystick, 3);
-        towerUpButton.whileHeld(new Towerup());
+        towerUpButton.whileHeld(new Towerup(0));
         towerDownButton = new JoystickButton(joystick, 2);
-        towerDownButton.whileHeld(new Towerdown());
+        towerDownButton.whileHeld(new Towerdown(0));
         driverJoystick = new Joystick(0);
         
         pickupOn_OffButton = new JoystickButton(driverJoystick, 2);
