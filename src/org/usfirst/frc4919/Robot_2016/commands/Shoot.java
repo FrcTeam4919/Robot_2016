@@ -11,7 +11,9 @@
 
 package org.usfirst.frc4919.Robot_2016.commands;
 
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
+
 import org.usfirst.frc4919.Robot_2016.Robot;
 
 /**
@@ -37,6 +39,9 @@ public class Shoot extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	Robot.shooterSystem.shootTheBall();
+    	Timer.delay(0.5);
+    	Robot.shooterSystem.ballFeeder();
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -50,10 +55,13 @@ public class Shoot extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.shooterSystem.stopBallFeeder();
+    	Robot.shooterSystem.stopBallShooter();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    	end();
     }
 }
