@@ -49,7 +49,6 @@ public class Pickup extends Subsystem {
     }
     public void startThePickUpMotor() {
     	spike1.set(Relay.Value.kForward);
-    	spike1.set(Relay.Value.kOn);
     }
     public void stopThePickUpMotor() {
     	spike1.set(Relay.Value.kOff);

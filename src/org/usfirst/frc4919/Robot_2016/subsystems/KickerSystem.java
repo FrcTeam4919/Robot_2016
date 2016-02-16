@@ -51,11 +51,9 @@ public class KickerSystem extends Subsystem {
     }
     public void down() {
     	spike3.set(Value.kForward);
-    	spike3.set(Value.kOn);
     }
     public void up () {
     	spike3.set(Value.kReverse);
-    	spike3.set(Value.kOn);
     }
     public void stop () {
     	spike3.set(Value.kOff);
