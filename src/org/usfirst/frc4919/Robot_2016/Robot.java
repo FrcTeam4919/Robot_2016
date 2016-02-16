@@ -37,7 +37,6 @@ public class Robot extends IterativeRobot {
     public static DriveTrain driveTrain;
     public static Tower tower;
     public static ShooterSystem shooterSystem;
-    public static Pickup pickup;
     public static KickerSystem kickerSystem;
     public static Camera camera;
 
@@ -60,7 +59,6 @@ public class Robot extends IterativeRobot {
         driveTrain = new DriveTrain();
         tower = new Tower();
         shooterSystem = new ShooterSystem();
-        pickup = new Pickup();
         kickerSystem = new KickerSystem();
         camera = new Camera();
 

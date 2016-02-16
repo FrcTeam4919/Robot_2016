@@ -40,9 +40,10 @@ public class Shoot extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.shooterSystem.shootTheBall();
+    	Robot.shooterSystem.startThePickUpMotor();
     	Timer.delay(0.5);
     	Robot.shooterSystem.ballFeeder();
+    	Robot.shooterSystem.shootTheBall();
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -56,8 +57,8 @@ public class Shoot extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.shooterSystem.stopThePickUpMotor();
     	Robot.shooterSystem.stopBallFeeder();
-    	Robot.shooterSystem.stopBallShooter();
     }
 
     // Called when another command which requires one or more of the same
