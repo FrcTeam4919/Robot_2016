@@ -85,9 +85,9 @@ public class OI {
         SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
         SmartDashboard.putData("Drive Joystick", new DriveJoystick());
         SmartDashboard.putData("Shoot", new Shoot());
+        SmartDashboard.putData("Retract Kicker", new RetractKicker());
         SmartDashboard.putData("Pick Up_Intake", new PickUp_Intake());
         SmartDashboard.putData("Brake", new Brake());
-        SmartDashboard.putData("Retract Kicker", new RetractKicker());
         SmartDashboard.putData("Towerup: highest", new Towerup(4.5));
         SmartDashboard.putData("Towerdown: lowest", new Towerdown(.5));
         SmartDashboard.putData("SwapView", new SwapView());
