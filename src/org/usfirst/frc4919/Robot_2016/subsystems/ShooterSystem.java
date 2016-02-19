@@ -65,5 +65,8 @@ public class ShooterSystem extends Subsystem {
     public void shootTheBall() {
     	cimMotor1.set(1.0);
     }
+    public void stopTheShooter() {
+    	cimMotor1.set(0.0);
+    }
 }
 
