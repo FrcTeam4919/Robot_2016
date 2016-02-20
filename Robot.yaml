@@ -200,7 +200,7 @@ Children:
           validators: &id005 [RelayOutput]
           value: '1'
       Base: Spike
-      Name: Spike 2
+      Name: Ball Feeder Spike
     - Children: []
       Properties:
         Output Channel (Relay): !!robotbuilder.data.properties.ChoicesProperty
@@ -210,7 +210,7 @@ Children:
           validators: *id005
           value: '0'
       Base: Spike
-      Name: Spike 1
+      Name: Pick Up Spike
     Properties:
       Default command parameters: !!robotbuilder.data.properties.ParametersProperty
         default: []
