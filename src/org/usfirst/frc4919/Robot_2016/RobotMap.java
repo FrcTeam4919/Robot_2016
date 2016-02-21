@@ -41,7 +41,7 @@ public class RobotMap {
     public static SpeedController shooterSystemCimMotor1;
     public static Relay shooterSystemBallFeederSpike;
     public static Relay shooterSystemPickUpSpike;
-    public static Relay kickerSystemSpike3;
+    public static Relay kickerSystemkickerupdown;
     public static DigitalInput kickerSystemLimitSwitch;
     public static Servo cameraServo1;
 
@@ -80,8 +80,8 @@ public class RobotMap {
         shooterSystemPickUpSpike = new Relay(0);
         LiveWindow.addActuator("ShooterSystem", "Pick Up Spike", shooterSystemPickUpSpike);
         
-        kickerSystemSpike3 = new Relay(2);
-        LiveWindow.addActuator("KickerSystem", "Spike 3", kickerSystemSpike3);
+        kickerSystemkickerupdown = new Relay(2);
+        LiveWindow.addActuator("KickerSystem", "kickerupdown", kickerSystemkickerupdown);
         
         kickerSystemLimitSwitch = new DigitalInput(2);
         LiveWindow.addSensor("KickerSystem", "Limit Switch ", kickerSystemLimitSwitch);

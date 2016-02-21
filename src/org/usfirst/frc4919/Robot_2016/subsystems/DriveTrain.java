@@ -62,10 +62,11 @@ public class DriveTrain extends Subsystem {
     	robotDrive21.drive(0, 0);
     }
     public double getUltraSonicValue() {
+    	return ((ultrasonic.getAverageVoltage()*1000)/9.766);
+    }
+    public double getRawVoltage() {
     	return (ultrasonic.getAverageVoltage());
     }
-
-    
     
 }
 
