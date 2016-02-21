@@ -11,6 +11,7 @@
 
 package org.usfirst.frc4919.Robot_2016.subsystems;
 
+import org.usfirst.frc4919.Robot_2016.Robot;
 import org.usfirst.frc4919.Robot_2016.RobotMap;
 import org.usfirst.frc4919.Robot_2016.commands.*;
 
@@ -67,6 +68,8 @@ public class DriveTrain extends Subsystem {
     public double getRawVoltage() {
     	return (ultrasonic.getAverageVoltage());
     }
-    
+    public void moveForward() {
+    	Robot.driveTrain.robotDrive21.arcadeDrive(1.0, 0);
+    }
 }
 
