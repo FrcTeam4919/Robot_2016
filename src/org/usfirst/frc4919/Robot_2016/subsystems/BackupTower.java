@@ -47,10 +47,10 @@ public class BackupTower extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     public void backupTowerUp() {
-    	backupTowerController.set(0.1);
+    	backupTowerController.set(1);
     }
     public void backupTowerDown() {
-    	backupTowerController.set(-0.1);
+    	backupTowerController.set(-1);
     }
     public void backupTowerStop() {
     	backupTowerController.set(0.0);
