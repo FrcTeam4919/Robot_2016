@@ -71,5 +71,8 @@ public class DriveTrain extends Subsystem {
     public void moveForward() {
     	Robot.driveTrain.robotDrive21.arcadeDrive(1.0, 0);
     }
+    public void moveBackwards() {
+    	Robot.driveTrain.robotDrive21.arcadeDrive(-1.0, 0);
+    }
 }
 

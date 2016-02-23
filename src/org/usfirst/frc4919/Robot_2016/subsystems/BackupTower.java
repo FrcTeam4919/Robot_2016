@@ -55,5 +55,8 @@ public class BackupTower extends Subsystem {
     public void backupTowerStop() {
     	backupTowerController.set(0.0);
     }
+    public void backupTowerSallyPort() {
+    	backupTowerController.set(0.5);
+    }
 }
 
