@@ -41,10 +41,10 @@ public class Shoot extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
     	//Robot.shooterSystem.startThePickUpMotor();
-    	
-    	Robot.shooterSystem.ballFeeder();
-    	Timer.delay(3);
     	Robot.shooterSystem.shootTheBall();
+    	Timer.delay(3);
+    	Robot.shooterSystem.ballFeeder();
+    	
     }
 
     // Called repeatedly when this Command is scheduled to run
