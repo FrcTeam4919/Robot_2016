@@ -38,7 +38,7 @@ public class SetBrake extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	setTimeout(0.1);
+    	setTimeout(0.05);
     	Robot.kickerSystem.down();
     }
 

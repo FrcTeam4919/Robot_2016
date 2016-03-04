@@ -56,6 +56,12 @@ public class ShooterSystem extends Subsystem {
     public void stopThePickUpMotor() {
     	pickUpSpike.set(Relay.Value.kOff);
     }
+    public void startReverseThePickUp() {
+    	pickUpSpike.set(Relay.Value.kReverse);
+    }
+    public void stopReverseThePickup() {
+    	pickUpSpike.set(Relay.Value.kOff);
+    }
     public void ballFeeder() {
     	ballFeederSpike.set(Value.kForward);
     }
